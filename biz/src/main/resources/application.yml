@@ -1,0 +1,38 @@
+server:
+  port: 8098
+  servlet:
+    session:
+      timeout: 30m
+    context-path: /admin
+  tomcat:
+    accesslog:
+      enabled: true
+      suffix: '.log'
+      prefix: access_log
+      file-date-format: '.yyyy-MM-dd'
+      directory: logs
+    uri-encoding: UTF-8
+    threads:
+      max: 1000
+      min-spare: 30
+    basedir: '/app/logs/tomcat'
+
+
+logging:
+  level:
+    org:
+      apache:
+        catalina: INFO
+        tomcat: INFO
+
+
+spring:
+  datasource:
+    name: druidDataSoure
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://jdbc:mysql://127.0.0.1:3306/fte?useUnicode=true&characterEncoding=UTF-8&ueSSL=false&serverTimezone=GMT%2B8
+      username: root
+      password: root
+
