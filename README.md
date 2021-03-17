@@ -1,3 +1,2 @@
 # Springboot-demo
-Springboot项目启动后自动创建多表关联的数据库与表的方案，将不断进行相关方案的完善。目前代码demo里主要有以上几种：
-1.模仿Activiti工作流自动建库与建表机制；
+模仿工作流引擎Activiti自动建表机制实现Springboot在启动时自动生成数据库与表demo 。
