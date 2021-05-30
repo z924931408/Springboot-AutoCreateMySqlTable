@@ -1,2 +1,2 @@
 # Springboot-demo
-模仿工作流引擎Activiti自动建表机制实现Springboot在启动时自动生成数据库与表demo 。
+模仿工作流引擎Activity自动建表机制实现Springboot在启动时自动生成数据库与表demo 。
